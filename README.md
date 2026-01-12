@@ -110,3 +110,29 @@ You can go the extra mile and include more elements to be nested within the `<he
 * `<link rel="stylesheet" href="main.css">`: Connects your HTML file to an external CSS file named **`main.css`**, allowing you to keep any styling rules separate from your HTML structure, which is the standard best practice.
 *`<style> ... </style>`: A container for writing CSS rules directly inside the HTML file. This simple feature makes it handy for customizing small, page-specific styles though external files (like the `<link>` above) are usually preferred for larger projects and bigger websites.
 * `<script src="script.js"></script>`: Links an external JavaScript file named **`script.js`**. The JavaScript file will add any type of interactivity for your site (like button clicks or animations), the `src` attribute tells the HTML where to find all the script file.
+
+### The `<title>` Tag:
+
+In HTML, the `<title>` tag is used to define the **title of the HTML document**, this title will be displayed in teh browser's title bar or in the page's tab. This `<title>` tag is placed within the `<head>` section of the HTML document.
+
+#### Basic Syntax:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p>This is a paragraph of text.</p>
+</body>
+</html>
+```
+
+In the example, the `<title>` tag sets the title of the page to "My Web Page". When you open this HTML file, you will see "My Web Page" in the title bar or in the tab.
