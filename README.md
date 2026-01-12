@@ -30,3 +30,18 @@ p {
 ```
 
 In this example, the `p` is the **selector**, targeting **all paragraph elements**. The **declaration block** contains two declarations: One setting the text color to blue and the other setting the font size to 15 pixels.
+
+### CSS Comments:
+
+**Comments** are notes within the code that **do not get executed**, they are just for making the code more readable, maintainable and other documentations.
+
+In CSS, comments are written between `/*` and `*/` tags (similar to Java's comments), where anything placed inside these tags will be treated as a comment and will not affect the styling of the page.
+
+#### Syntax:
+
+```css
+/* This is a comment */
+p {
+    color: blue; /* This sets the text color to blue */
+}
+```
