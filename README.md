@@ -136,3 +136,35 @@ In HTML, the `<title>` tag is used to define the **title of the HTML document**,
 ```
 
 In the example, the `<title>` tag sets the title of the page to "My Web Page". When you open this HTML file, you will see "My Web Page" in the title bar or in the tab.
+
+## Adding CSS:
+
+### Inline CSS:
+
+**Inline CSS** is a method of **adding CSS styles** directly to an HTML element using the `style` attribute. This approach allows you to apply unique styles to **individual elements** without the need for external or internal stylesheets. Inline styles are useful for making quick, specific style changes to a single element!
+
+#### Basic Syntax:
+
+Here's the basic syntax for using inline CSS:
+
+```html
+<element style="property: value;"></element>
+```
+
+* `<element>`: The HTML element you want to style.
+* `style`: An attribute that contains the CSS declarations.
+* `property`: The CSS property you want to set (e.g. color, font-size).
+* `value`: The value you wnt to set foe the property (e.g. blue, 16px).
+
+#### Example of Usage:
+
+```html
+<p style="color: blue; font-size: 16px;">This is a paragraph with inline styles.</p>
+```
+
+In this example, the paragraph element has inline styles that set the text color to blue and the font size to 16 pixels. These styles will only apply to this specific paragraph element (which is the **selector** for this instance).
+
+##### Result:
+
+[![Inline CSS Result](images/Inline%20CSS.jpg)]
+
