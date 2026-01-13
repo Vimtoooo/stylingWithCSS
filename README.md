@@ -168,3 +168,36 @@ In this example, the paragraph element has inline styles that set the text color
 
 [![Inline CSS Result](images/Inline%20CSS.jpg)]
 
+### Internal CSS:
+
+Internal CSS is a method of **adding CSS styles to an HTML document** by placing them within a `<style>` tag in the `<head>` section of the document. This approach allows you to apply a large variety of styles to distinct selectors and elements like `<p>`, `<h1>` tags and even the background color, all in a single page without the need for external stylesheets. Internal CSS is useful for styling a single document or making quick style changes.
+
+#### Basic Syntax and Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p>This is a paragraph of text.</p>
+</body>
+</html>
+```
+
+In this example, the `<style>` tag contains CSS rules that set the background color of the `<body>` to light blue, and the color of the `<p>` (paragraph) to blue, including a font size being set to **16 pixels**. These styles will apply to all elements within the HTML document (background will always be light blue and all `<p>` tags will be in blue with their corresponding font size).
+
+##### Result:
+
+[![Internal CSS Example](images/Internal%20CSS.jpg)]
