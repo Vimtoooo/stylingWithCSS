@@ -166,7 +166,7 @@ In this example, the paragraph element has inline styles that set the text color
 
 ##### Result:
 
-[![Inline CSS Result](images/Inline%20CSS.jpg)]
+![Inline CSS Result](images/Inline%20CSS.jpg)
 
 ### Internal CSS:
 
@@ -200,4 +200,54 @@ In this example, the `<style>` tag contains CSS rules that set the background co
 
 ##### Result:
 
-[![Internal CSS Example](images/Internal%20CSS.jpg)]
+![Internal CSS Example](images/Internal%20CSS.jpg)
+
+### External CSS:
+
+External CSS is a method of adding CSS styles to an HTML document by placing them in a **separate CSS fiel** and linking that file to the HTML document using the `<link>` tag. This approach allows you to apply the same styles to multiple HTML pages, making it easier to maintain and update the design of your website. 
+External CSS is ideal for **large projects** where consistency and efficiency are crucial.
+
+#### Basic Syntax and Example of Usage:
+
+Here's how to use external CSS:
+
+1. Create a CSS file (e.g. `styles.css`) with your CSS rules.
+
+```css
+body {
+    background-color: lightblue;
+}
+p {
+    color: blue;
+    font-size: 16px;
+}
+```
+
+2. Link the CSS file to your HTML document by adding a `<link>` tag in the `<head>` section:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p>This is a paragraph of text.</p>
+</body>
+</html>
+```
+
+#### Breakdown:
+
+In this example, the `<link>` tag connects the `styles.css` file to the HTML document. 
+
+- `<head>`: A tag at the top of an HTML document that contains information about the page (e.g. title, links to CSS files, metadata and scripts), but all this information is **not shown on the webpage itself**.
+- `<link>`: A self-closing tag that is located within the `<head>` tag, with the functionality of connecting external resources to your HTML file, such as a CSS file for styling.
+- `rel`: This attribute specifies the relationship between the HTML document and the linked file (stylesheet).
+- `href`: An attribute that specified the path to the CSS file (if it were to be in a folder, you would use `/` for the path, e.g. `stylesheets/styles.css`).
+
+##### Result:
+
+![External CSS](images/External%20CSS.jpg)

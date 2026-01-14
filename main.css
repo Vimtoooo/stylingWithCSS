@@ -1,5 +1,7 @@
-/* This CSS file is used for large styling features! */
-
-h1 {
-    color:aqua
+body {
+    background-color: lightblue;
+}
+p {
+    color: blue;
+    font-size: 16px;
 }
