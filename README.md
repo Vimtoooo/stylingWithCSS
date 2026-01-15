@@ -453,3 +453,72 @@ Here is another example:
 ##### Result:
 
 ![ID Selector](images/ID%20Selector.jpg)
+
+### Group Selectors:
+
+The **group selector** is used to **select multiple HTML elements** and apply the **same styles** to all of them. This is particularly useful when you want to apply a common set of styles to different elements without having to write separate rules for each element. By grouping selectors, you can write more concise and efficient CSS code.
+
+#### Basic Syntax:
+
+To use a group selector, you list the selectors that you would want to group, separated by commas (`,`). Here's the basic syntax:
+
+```css
+selector1, selector2, selector3 {
+    property: value;
+}
+```
+
+#### Example of Usage:
+
+This this example, let's say you want to apply the same text color and font size to all `<h1>`, `<h2>` and `<p>` elements. You can use a group selector like this:
+
+```css
+h1, h2, p {
+    color: blue;
+    font-size: 16px;
+}
+```
+
+This group selector targets all mentioned elements, while declaring the text color to blue and the font size to 16 pixels.
+
+#### Mixing Selectors:
+
+You can group any type of selectors, including type selectors, class selectors and ID selectors.
+
+```css
+h1, .highlight, #intro {
+    background-color: yellow;
+}
+```
+
+#### Complete Example:
+
+Now, take this complete example:
+
+```html
+<html>
+<head>
+    <title>Group Selectors</title>
+    <style>
+        /* Write CSS rules here */
+        h1, h2 {
+            color: red;
+        }
+        p, div {
+            background-color: lightgray;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a main heading</h1>
+    <h2>This is a subheading</h2>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Group Selectors](images/Group%20Selectors.jpg)
