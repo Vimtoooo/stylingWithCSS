@@ -345,3 +345,61 @@ Let's say that we would want to include a diversity of styles, internally within
 ##### Result:
 
 ![Type Selectors](images/Type%20Selectors.jpg)
+
+### Class Selectors:
+
+The **class selector** is used to select HTML elements based on the **value of their `class` attribute**. It allows you to apply the same styles to multiple elements across your document. Class selectors are particularly useful when you want to **style a group of elements in the same way**, regardless of their tag names.
+
+#### Basic Syntax:
+
+To target elements with a specific class in your CSS, you use a period (`.`) followed by the class name. Here's the basic syntax for using a class selector.
+
+```css
+.classname {
+    property: value;
+}
+```
+
+> [!NOTE]
+> Once the period has been placed, all classes of the same group will have the specified styles applied in your webpage!
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Class Selector</title>
+    <style>
+        /* Write CSS rules here */
+        .blue-text {
+            color: blue;
+        }
+        .large-text {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="blue-text">This is a main heading</h1>
+    <h2 class="large-text">This is a subheading</h2>
+    <p class="blue-text">This is a paragraph.</p>
+    <p class="large-text">This is another paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Class Selectors](images/Class%20Selectors.jpg)
+
+#### Why should I use Class Selectors?
+
+Not only that the class selectors allow you to group two or more element tags and apply the same styles, but to keep your styles more organized. For example:
+
+- For highlighting -> `color: yellow` and `background-color: black`.
+- For tables -> `color: purple`.
+- For captions -> `font-size: 12px`.
+
+But remember to mention the **`class` attribute** when groping styles together!
+ 
