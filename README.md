@@ -402,4 +402,54 @@ Not only that the class selectors allow you to group two or more element tags an
 - For captions -> `font-size: 12px`.
 
 But remember to mention the **`class` attribute** when groping styles together!
- 
+
+### ID Selector:
+
+The **ID selector** is used to **target a specific HTML element** based on the value of its **`id` attribute**. Unlike class selectors, which can be used to style multiple elements, ID selectors are unique and can only be applied to a **single element on a page**. This makes them useful for styling **individual elements** with specific styles that should **not be applied to any other element**.
+
+#### Basic Syntax:
+
+To target an element with a specific ID in your CSS, you use a hash symbol (`#`) followed by the IS value. Here's the basic syntax for using an ID selector.
+
+```css
+#idname {
+    property: value
+}
+```
+
+#### Example of Usage:
+
+```css
+#intro {
+    color: blue;
+    font-size: 20px;
+}
+```
+
+In this example, the ID selector `#intro` targets the element with the IS "intro". This declarations set the text color to blue and the font size to 20 pixels for this elements.
+
+Here is another example:
+
+```html
+<html>
+<head>
+    <title>ID Selector</title>
+    <style>
+        /* Write CSS rules here */
+        #special {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a main heading</h1>
+    <p>This is a paragraph.</p>
+    <div id="special">This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![ID Selector](images/ID%20Selector.jpg)
