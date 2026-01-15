@@ -282,3 +282,66 @@ p {
 ```
 
 In this example, `p` is the **selector**, targeting all paragraph elements. The declarations set the text color to blue and the ont size to 16 pixels for all paragraphs. 
+
+### Type Selector:
+
+The **type selector**, also known as the **element selector** or **tag selector**, targets HTML elements based on their tag names. It is one of the simplest and most fundamental selectors in CSS.
+
+#### Basic Syntax:
+
+```css
+tagname {
+    property: value;
+}
+```
+
+* `tagname`: The name of the HTML tag you want to style (e.g. h1, div...).
+* `property`: The CSS property you want to set (e.g. color, font-size).
+* `value`: The value you want to set for the property (e.eg. blue, 16px).
+
+#### Example of Usage:
+
+```css
+p {
+    color: blue;
+    font-size: 16px;
+}
+```
+
+In the example above, the type selector `p` targets all `<p>` (paragraph) elements in the HTML document. The declarations set the text color to blue and the font size to 16 pixels for all paragraphs in the HTML file.
+
+Let's say that we would want to include a diversity of styles, internally within our HTML document.
+
+```html
+<html>
+<head>
+    <title>Type Selector</title>
+    <style>
+        /* CSS rules are applied here! */
+        h1 {
+            color: darkred;
+        }
+        h2 {
+            color: green;
+        }
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+        div {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a main heading</h1>
+    <h2>This is a subheading</h2>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Type Selectors](images/Type%20Selectors.jpg)
