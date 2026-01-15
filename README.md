@@ -251,3 +251,34 @@ In this example, the `<link>` tag connects the `styles.css` file to the HTML doc
 ##### Result:
 
 ![External CSS](images/External%20CSS.jpg)
+
+## Basic Selectors:
+
+### Introduction to Selectors:
+
+In CSS, selectors are patterns used to **select the HTML elements** that you would want to style. They are a crucial part of CSS rules, as they determine which elements the styles will be applied to. There are various types of selectors, each targeting elements in different ways. Understanding selectors is **fundamental to mastering CSS and creating well-styled web pages**.
+
+#### Basic Syntax:
+
+Here's a basic CSS rule with a selector:
+
+```css
+selector {
+    property: value;
+}
+```
+
+* `selector`: Targets the HTML elements to be styled.
+* `property`: The style attribute you want to change (e.g. color, font-size).
+* `value`: The value you want to set for the property (e.g. blue, 16px).
+
+#### Example of Usage:
+
+```css
+p {
+    color: blue;
+    font-size: 16px;
+}
+```
+
+In this example, `p` is the **selector**, targeting all paragraph elements. The declarations set the text color to blue and the ont size to 16 pixels for all paragraphs. 
