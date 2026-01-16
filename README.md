@@ -522,3 +522,52 @@ Now, take this complete example:
 ##### Result:
 
 ![Group Selectors](images/Group%20Selectors.jpg)
+
+### Universal Selector:
+
+The universal selector is a powerful selector in CSS that targets **every HTML element on a page**. It is represented by an asterisk (`*`). When it is utilized, the universal selector applies the specified styles to all elements, regardless of their type, class or ID. This can by useful for setting global styles or resetting default styles across the entire document.
+
+#### Basic Syntax:
+
+```css
+* {
+    property: value;
+}
+```
+
+#### Example of Usage:
+
+For this example, let's say that you want to set the default text color and font size for all elements on a page. Then you can use the universal selector like this:
+
+```css
+* {
+    color: black;
+    font-size: 14px;
+}
+```
+
+Now, this second example alters all elements to pursue the same color (dark grey) and font size (16px):
+
+```html
+<html>
+<head>
+    <title>Universal Selector</title>
+    <style>
+        * {
+            color: darkgrey;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a main heading</h1>
+    <h2>This is a subheading</h2>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Universal Selector](images/Universal%20Selector.jpg)
