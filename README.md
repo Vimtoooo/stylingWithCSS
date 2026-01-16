@@ -652,3 +652,70 @@ Let's recap on what we discussed in this topic:
 ##### Result:
 
 ![Recap on Selectors](images/Recap%20on%20Selectors.jpg)
+
+## Text Fundamentals:
+
+### Text Color:
+
+In CSS, the `color` property is used to set the color of the text **inside an element**, you acn apply different color values to text to enhance the appearance of your webpage.
+
+#### Example of Usage:
+
+```css
+h3 {
+    color: purple;
+}
+```
+
+### Font Family:
+
+In CSS, the **font-family** property is used to specify the **typeface for text within an HTML element**. This property lets you list preferred fonts for your text. If the first font isn't available, the browser will use the next one in the list, ensuring a similar look.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using the `font-family` property:
+
+```css
+selector {
+    font-family: font1, font2, generic-family;
+}
+```
+##### Breakdown:
+
+* `font1, font2`: The preferred font family names, listed in order of preference. If `font1` is not available, the browser will try `font2`, and so on.
+* `generic-family`: A generic font family name, such as `serif`, `sans-serif`, `monospace`, `cursive`, or `fantasy`. This serves as a fallback if none of the specified fonts are available. You can think of it like a default font that will always be available no matter what situation you face.
+
+#### Important Guidelines:
+
+When specifying font family names, it's important to follow these guidelines:
+
+- If a font family contains whitespace, it should be enclosed in **quotation marks** (e.g. `"Times New Roman"`, `"Courier New"`).
+- Multiple font family names should be separated by commas.
+- It's good practice to include a generic font family as the last option in the list to ensure that a suitable fallback is used if none of the specified font are available.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Font Family</title>
+    <style>
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+```
+
+##### Result:
+
+![Font Family](images/Font%20Family.jpg)
