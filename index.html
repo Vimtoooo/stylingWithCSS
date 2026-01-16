@@ -1,18 +1,41 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Universal Selector</title>
+    <title>Selection Challenge</title>
     <style>
-        /* Write CSS rules here */
-        * {
-            color: darkgrey;
+        /* Type Selector */
+        p {
+            color: blue;
             font-size: 16px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #special {
+            background-color: lightgrey;
+            font-size: 20px;
+        }
+
+        /* ID Selector */
+        h1, li {
+            color: red;
         }
     </style>
 </head>
 <body>
     <h1>This is a main heading</h1>
-    <h2>This is a subheading</h2>
+    <h2 class="highlight">This is a subheading</h2>
     <p>This is a paragraph.</p>
-    <div>This is a division.</div>
+    <p>This is another paragraph.</p>
+    <div class="highlight">This is a division.</div>
+    <ul id="special">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 </body>
 </html>

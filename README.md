@@ -571,3 +571,84 @@ Now, this second example alters all elements to pursue the same color (dark grey
 ##### Result:
 
 ![Universal Selector](images/Universal%20Selector.jpg)
+
+### Recap - Basic Selectors:
+
+Let's recap on what we discussed in this topic:
+
+- **Type Selectors**: Apply any styles into a single element.
+    ```css
+    p {
+        color: white;
+    }
+    ```
+- **Class Selectors**: Organize a set of styles for elements with the same class attribute value.
+    ```css
+    .fancy {
+        background-color: purple;
+        color: pink;
+    }
+    ```
+- **ID Selector**: Apply styles for elements with the same ID attribute value.
+    ```css
+    #title {
+        font-size: 45px;
+    }
+    ```
+- **Universal Selector**: Set a pre determined style to all present elements within an HTML document.
+    ```css
+    * {
+        color: cyan;
+        font-size: 16px;
+    }
+    ```
+
+#### Example of a Webpage:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selection Challenge</title>
+    <style>
+        /* Type Selector */
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #special {
+            background-color: lightgrey;
+            font-size: 20px;
+        }
+
+        /* ID Selector */
+        h1, li {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a main heading</h1>
+    <h2 class="highlight">This is a subheading</h2>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <div class="highlight">This is a division.</div>
+    <ul id="special">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>
+```
+
+##### Result:
+
+![Recap on Selectors](images/Recap%20on%20Selectors.jpg)
