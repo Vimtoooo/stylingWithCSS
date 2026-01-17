@@ -900,3 +900,59 @@ The **text-decoration** property in CSS is used to **add or remove decorations t
 ##### Result:
 
 ![Text Decoration](images/Text%20Decoration.jpg)
+
+### Recap 1 - Text Fundamentals:
+
+Let's recap on what we have learned for this topic:
+
+- **Text Color (`color`)**: Sets a color for the text.
+- **Font Styles (`font-family`)**: Defines any given font, as long as it works.
+- **Font Size (`font-size`)**: Defines the size of the text.
+- **Font Weight (`font-weight`)**: Applies a weight value to the text (different levels of bald text).
+- **Text Alignment (`text-align`)**: Controls where the text will be, either to the left, right or the center of the page.
+- **Text Decorations (`text-decoration`)**: Adds or removes underlines, overlines and strikethroughs.
+
+#### Example of a Webpage:
+
+```html
+<html>
+<head>
+    <title>Recap Challenge #1</title>
+    <style>
+        h1 {
+            color: darkblue;
+            font-size:32px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .intro-text {
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        li {
+            font-weight: 600;
+        }
+        a {
+            text-decoration: none;
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Discovering the Ocean</h1>
+    <p class="intro-text">The ocean covers 70% of the Earth's surface and is full of life. It also helps regulate the planet's climate.</p>
+    <h2>Marine Life</h2>
+    <ul>
+        <li>Whales</li>
+        <li>Octopuses</li>
+        <li>Coral Reefs</li>
+    </ul>
+    <p>Learn more at <a href="https://www.oceans.org" target="_blank">The Ocean Conservation Society</a>.</p>
+</body>
+</html>
+```
+
+##### Result:
+
+![Recap 1 of Text Fundamentals](images/Recap%201%20-%20Text%20Fundamentals.jpg)
