@@ -767,3 +767,56 @@ Here, we use distinct units to define the font size of our text:
 ##### Result:
 
 ![Font Size](images/Font%20Size.jpg)
+
+### Font Weight:
+
+In CSS, the **font-weight** property is used to control the boldness or thickness of text within an HTML element.
+
+#### Common Numeric Values for `font-weight`:
+
+- `100`: Thin
+- `200`: Extra Light
+- `300`: Light
+- `400`: Normal
+- `500`: Medium
+- `600`: Semi Bold
+- `700`: Bold
+- `800`: Extra Bold
+- `900`: Black
+
+#### Common Keyword Values for `font-weight`:
+
+- `normal`: Equivalent to `400`
+- `bold`: Equivalent to `700`
+- `lighter`: Specifies a lighter weight that the parent element
+- `bolder`: Specifies a bolder weight than the parent element
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Font Weight</title>
+    <style>
+        h1 {
+            font-weight: 900;
+        }
+        p {
+            font-weight: lighter;
+        }
+        div {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Font Weight](images/Font%20Weight.jpg)
