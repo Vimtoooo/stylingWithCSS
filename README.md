@@ -860,3 +860,43 @@ In CSS, the **text-align** property is used to control the horizontal alignment 
 ##### Result:
 
 ![Text Align](images/Text%20Align.jpg)
+
+### Text Decoration:
+
+The **text-decoration** property in CSS is used to **add or remove decorations to text** within an HTML element. This property allows you to underline, overline, or strikethrough text, providing visual emphasis or indicating specific states.
+
+#### Common Values for `text-decoration`:
+
+* `none`: Removes any text decoration, noting that this is the default value.
+* `underline`: Adds an underline to the text.
+- `overline`: Adds an overline above the text.
+- `line-through`: Adds a line through the middle of the text (strikethrough).
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Text Decoration</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .strike {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <p class="underline">This is a paragraph with a <a href="#">link</a>.</p>
+    <div class="strike">This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Text Decoration](images/Text%20Decoration.jpg)
