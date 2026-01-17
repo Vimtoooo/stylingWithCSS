@@ -657,7 +657,7 @@ Let's recap on what we discussed in this topic:
 
 ### Text Color:
 
-In CSS, the `color` property is used to set the color of the text **inside an element**, you acn apply different color values to text to enhance the appearance of your webpage.
+In CSS, the `color` property is used to set the color of the text **inside an element**, you can apply different color values to text to enhance the appearance of your webpage.
 
 #### Example of Usage:
 
@@ -719,3 +719,51 @@ When specifying font family names, it's important to follow these guidelines:
 ##### Result:
 
 ![Font Family](images/Font%20Family.jpg)
+
+### Font Size:
+
+In CSS, the **font-size** property is used to control the **size of the text** within an HTML element.
+
+#### Common Units:
+
+Here are some common units used for specifying font sizes:
+
+* **Pixels (px)**: An absolute unit that specifies the font size in pixels, this is the most straightforward and commonly used unit for setting font sizes.
+* **Ems (em)**: A reative unit that is based on the font size of the parent element. For example, if the parent element has a font size of `16px`, the `1em` is equal to `16px`, and `2em` is equal to `32px`, and so on.
+* **Rems (rem)**: A relative unit that is based on the font size of the root element (`<html>`), this unit provides more consistency across the document, as it is not affected by the font size of parent elements.
+* **Percentages (%)**: Another relative unit that is based on the font size of the parent element, similar to `em`. For example, if the parent element has a font size of `16px`, then `100%` is equal to `16px`, `150%` is equal to `24px`, and so on.
+
+#### Example of Usage:
+
+Here, we use distinct units to define the font size of our text:
+
+```html
+<html>
+<head>
+    <title>Font Size</title>
+    <style>
+        h1 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        div {
+            font-size: 120%;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+> [!NOTE]
+> The `h1` tag pursues the value of `32px`, equivalent to `2em` and `200%`. In the `p` tag, its dimension is set to `1.2em`, equivalent to `14.2px` and `110%`. Lastly, the `div` tag contains `120%`, which is equal to `19.2px` and `1.4em`.
+
+##### Result:
+
+![Font Size](images/Font%20Size.jpg)
