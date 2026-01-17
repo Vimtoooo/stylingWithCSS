@@ -820,3 +820,43 @@ In CSS, the **font-weight** property is used to control the boldness or thicknes
 ##### Result:
 
 ![Font Weight](images/Font%20Weight.jpg)
+
+### Text Alignment:
+
+In CSS, the **text-align** property is used to control the horizontal alignment of text within an HTML element.
+
+#### Common Values for `text-align`:
+
+* `left`: Aligns the text to the left, which is the default alignment for most text.
+- `right`: Aligns the text to the right.
+- `center`: Canters the text horizontally within the element.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Text Alignment</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: right;
+        }
+        div {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading. </h1>
+    <p>This is a paragraph.</p>
+    <div>This is a division. </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Text Align](images/Text%20Align.jpg)
