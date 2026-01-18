@@ -1008,3 +1008,68 @@ Here are a ffw common ways to specify color values in CSS:
 ##### Result:
 
 ![Background Colors](images/Background%20Colors.jpg)
+
+### HEX Colors:
+
+**Hex colors** are a way to specify colors using hexadecimal values. A hexadecimal color code is a **six-digit code** preceded by a hash symbol (`#`) that represents the amount of red, green and blue light that makes up a color. Each pair of digits in the code represents the intensity of one of these primary colors, ranging **from 00 (no intensity) to FF (full intensity)**. Hex colors provide a wide range of color options and are widely used in web design.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using hex colors in CSS:
+
+```css
+selector {
+    color: #RRGGBB;
+    background-color: #RRGGBB;
+}
+```
+
+#### Simple Example:
+
+```css 
+p {
+    color: #FF0000; /* Red */
+    background-color: #00FF00; /* Green */
+}
+```
+
+#### Using Shorthand Notations:
+
+You can also use shorthand notation for hex colors when both digits in each pair are the same. For example:
+
+```css
+p {
+    color: #F00; /* Red (equivalent to #FF0000) */
+    background-color: #0F0; /* Green (equivalent to #00FF00) */
+}
+```
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>HEX Colors</title>
+    <style>
+        h1 {
+            background-color: #BF00FF; /* Electric Purple */
+        }
+        h2 {
+            background-color: #39FF14; /* Neon Green */
+        }
+        p {
+            background-color: #D3D3D3; /* Light Grey */
+        }
+    </style>
+</head>
+<body>
+    <h1>This heading has an electric purple background!</h1>
+    <h2>This heading has a neon green background.</h2>
+    <p>This paragraph has a light gray background.</p>
+</body>
+</html>
+```
+
+##### Result:
+
+![Hex Colors](images/Hex%20Colors.jpg)
