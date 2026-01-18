@@ -901,7 +901,7 @@ The **text-decoration** property in CSS is used to **add or remove decorations t
 
 ![Text Decoration](images/Text%20Decoration.jpg)
 
-### Recap 1 - Text Fundamentals:
+### Recap - Text Fundamentals:
 
 Let's recap on what we have learned for this topic:
 
@@ -956,3 +956,55 @@ Let's recap on what we have learned for this topic:
 ##### Result:
 
 ![Recap 1 of Text Fundamentals](images/Recap%201%20-%20Text%20Fundamentals.jpg)
+
+## Colors and Backgrounds:
+
+### Background Color:
+
+In CSS, the **background-color** property is used to **set the background color of an HTML element**. This property allows you to specify a color value.
+
+#### Basic Syntax:
+
+```css
+selector {
+    background-color: color-value;
+}
+```
+
+#### Specifying Color Values:
+
+Here are a ffw common ways to specify color values in CSS:
+
+* **Names Colors**: Predefined color names, such as `red`, `blue`, `green`, `black`, `white`, etc.
+* **Hexadecimal Values**: Sex-digit color codes preceded by a hash symbol (`#`), such as `#FF0000` for red.
+* **RGB Values**: Specifies the red, green and blue components of a color using the `rgb()` function, with values ranging from **0 to 255**, such as `rgb(255, 0, 0)` for red.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Background Color</title>
+    <style>
+        h1 {
+            background-color: yellow; /* Yellow */
+        }
+        p {
+            background-color: #00FF00; /* Green */
+        }
+        div {
+            background-color: rgb(255, 0, 255); /* Magenta */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Background Colors](images/Background%20Colors.jpg)
