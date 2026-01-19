@@ -1073,3 +1073,54 @@ p {
 ##### Result:
 
 ![Hex Colors](images/Hex%20Colors.jpg)
+
+### RGB Colors:
+
+In CSS, **RGB Colors** are a way to specify **colors using the `rgb()` functional notation**. RGB stands for Red, Green and blue, each color is represented by a value ranging from 0 to 255. By combining different intensities fof these three primary colors, you can create a wide spectrum of colors.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using RGB colors in CSS:
+
+```css
+selector {
+    color: rgb(red, green, blue);
+    background-color: rgb(red, green, blue);
+}
+```
+
+> [!NOTE]
+> With the simple manipulation of the `rgb()` function, you can effortlessly combine and create custom colors with the adjustment of three numbers!
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>RGB Colors</title>
+    <style>
+        h1 {
+            background-color: rgb(100, 90, 0);
+            color: rgb(30, 60, 210);
+        }
+        p {
+            background-color: rgb(0, 50, 20);
+            color: rgb(180, 120, 55);
+        }
+        div {
+            background-color: rgb(21, 91, 66);
+            color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![RGB Colors](images/RGB%20Colors.jpg)
