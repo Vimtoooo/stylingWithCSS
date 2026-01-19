@@ -1124,3 +1124,42 @@ selector {
 ##### Result:
 
 ![RGB Colors](images/RGB%20Colors.jpg)
+
+### Transparency with RGBA:
+
+The **RGBA colors** are an extension of RGB colors that include an alpha channel to specify the **opacity of a color**. RGBA stands for Red, Green, Blue and Alpha. The alpha parameter is a number between 0.0 (fully transparent)  and 1.0 (fully opaque), allowing you to create colors with varying degrees of transparency.
+
+#### Basic Syntax:
+
+```css
+selector {
+    color: rgba(red, green, blue, alpha);
+    background-color: rgba(red, green, blue, alpha);
+}
+```
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Transparency with RGBA</title>
+    <style>
+        h3 {
+            background-color: rgba(0, 0, 255, 0.5); /* 50% transparency */
+        }
+        p {
+            background-color: rgba(0, 128, 0, 0.3); /* 30% transparency */
+        }
+    </style>
+</head>
+<body>
+    <h3>Did You Know?</h3>
+    <p>The first computer programmer was Ada Lovelace in the 1800s!</p>
+</body>
+</html>
+```
+
+##### Result:
+
+![RGBA Colors](images/RGBA%20Colors.jpg)
