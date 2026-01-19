@@ -1163,3 +1163,47 @@ selector {
 ##### Result:
 
 ![RGBA Colors](images/RGBA%20Colors.jpg)
+
+### Recap - Colors and Backgrounds:
+
+Let's recap on what we have learned during this topic:
+
+* **Background Colors**: The `background-color` property which can be used inside the block of a selector element to fill in a background color for that element.
+* **HEX Colors**: HEX Colors are hexadecimal number formats that indicate a code for a color, ranging from **00 (no intensity) to FF (full intensity)**. For example: (`#00FF00` for green).
+* **RGB Colors**: The `rgb()` function that takes the three primary colors (red, green and blue) to combine into any type of color (secondary or tertiary), each color is represented by a value **ranging from 0 to 255**.
+* **RGBA Colors**: The `rgba()` function which constructs a color with the capability of making it transparent or opaque, ranging from **0.0 (fully transparent)  and 1.0 (fully opaque)**.
+
+#### Example of a Website:
+
+```html
+<html>
+<head>
+    <title>Recap Challenge #1</title>
+    <style>
+        h1 {
+            color: white;
+            background-color: #000080;
+            text-align: center;
+        }
+        p {
+            color: #FFFFFF;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+        }
+        div {
+            background-color: rgba(237, 170, 26, 1);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <div>This is a division.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Recap - Colors and Backgrounds](images/Recap%20-%20Colors%20and%20Backgrounds.jpg)
