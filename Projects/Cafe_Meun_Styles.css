@@ -1,0 +1,23 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 24px;
+    color: rgba(25, 150, 25, 0.9);
+}
+
+.welcome {
+    text-align: center;
+    font-weight: 700;
+}
+
+.dish-name {
+    color: rgba(170, 50, 100, 0.7);
+}
