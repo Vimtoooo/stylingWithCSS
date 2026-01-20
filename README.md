@@ -1207,3 +1207,94 @@ Let's recap on what we have learned during this topic:
 ##### Result:
 
 ![Recap - Colors and Backgrounds](images/Recap%20-%20Colors%20and%20Backgrounds.jpg)
+
+## Box Model Part 1:
+
+### What is the Box Model?
+
+In CSS, every HTML element is treated as a **rectangular box**, following the **box model**. This model consists of four main parts:
+
+1. **Content** – The actual text, image or other content inside the box.
+2. **Padding** – Space between teh content and the border. It increases the size of the element but keeps the background color within.
+3. **Border** – A line that surrounds the padding and content. It can have different styles, colors and widths.
+4. **Margin** – Space outside the border that separates the element from one other elements.
+
+#### Illustration Graph:
+
+![The Box Model](images/Box%20Model.png)
+
+Understanding the Box Model helps in **controlling spacing and layout** in web designs!
+
+### Padding:
+
+The `padding` property is the space between the **content of an element and its border**. Padding is used to create visual breathing room around the content, making it more readable and visually appealing. You can control the padding on **all four sides of an element (top, right, bottom and left)** independently or using shorthand notation.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using the `padding` property:
+
+```css
+selector {
+    padding-top: value;
+    padding-right: value;
+    padding-bottom: value;
+    padding-left: value;
+}
+```
+
+#### Breakdown:
+
+* `padding-top`: The padding on the top side of the element.
+* `padding-right`: The padding on the right side of the element.
+* `padding-bottom`: The padding on the bottom side o the element.
+* `padding-left`: The padding on the left side of the element.
+* `value`: The desired padding value, which can be specified in pixels (`px`), ems (`em`), percentages (`%`) or other valid CSS units.
+
+#### Using Shorthand Notation:
+
+You can also use shorthand notation to set the padding for all four sides at once, for example:
+
+```css
+p {
+    padding: 20px; /* Applies the same padding to all four sides */
+}
+
+div {
+    padding: 10px 25px; /* Sets top and bottom padding to 10px, and left and right padding to 25px */
+}
+
+.button {
+    padding: 15px 30px 10px 5px; /* Sets padding for each side individually */
+}
+```
+
+In this example, all `<p>` (paragraph) elements have a padding on `20px` on all sides, all `<div>` elements have a top and bottom padding of `10px` and a left and right padding of `25px`, and all elements with the class `button` have a top padding of `15px`, a right padding of `30px`, a bottom padding of `10px` and a left padding of `5px`.
+
+> [!NOTE]
+> When using shorthand notation, always remember that if you want to set the padding for all of the available sides, the top-padding will be first, then the right-padding, then the bottom-padding and eventually, the left-padding, all taking turns **clock-wisely**!
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Padding</title>
+    <style>
+        h1 {
+            padding: 20px;
+        }
+        h2 {
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="border:2px solid black;">The Box Model</h1>
+    <h2 style="border:2px solid black;">It helps in controlling spacing and layout in web design! </h2>
+</body>
+</html>
+```
+
+##### Result:
+
+![Padding](images/Padding.jpg)
