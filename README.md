@@ -1298,3 +1298,70 @@ In this example, all `<p>` (paragraph) elements have a padding on `20px` on all 
 ##### Result:
 
 ![Padding](images/Padding.jpg)
+
+### Margins:
+
+In CSS, a **margin** is the **space around an element, outside of any defined borders**. It is another essential part of the box model. Margins are used to create space between elements, separating them from each other. You can control the margin on all four sides of an element (top, right, bottom and left) independently or using shorthand notation.
+
+#### Basic Syntax:
+
+```css
+selector {
+    margin-top: value;
+    margin-right: value;
+    margin-bottom: value;
+    margin-left: value;
+}
+```
+
+#### Breakdown:
+
+* `margin-side`: The margin on the desired side of the element.
+* `value`: The desired margin value, which can be specified in pixels (`px`), ems (`em`), percentages (`%`), or other valid CSS units.
+
+#### Using Shorthand Notation:
+
+Similarly to the padding with shorthand notation, the same logic is applied here as well.
+
+```css
+p {
+    margin: 20px; /* Applies the same margin to all four sides */
+}
+
+div {
+    margin: 10px 25px; /* Sets top and bottom margin to 10px, and left and right margin to 25px */
+}
+
+.button {
+    margin: 15px 30px 10px 5px;/* Sets margin for each side individually */
+}
+```
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Margins</title>
+    <style>
+        h1 {
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        div {
+            margin: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="border:2px solid black;">Mastering CSS Margins</h1>
+    <div style="border:2px solid black;">Margins create space around elements.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Margins](images/Margins.jpg)
