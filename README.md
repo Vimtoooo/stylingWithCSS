@@ -1365,3 +1365,88 @@ div {
 ##### Result:
 
 ![Margins](images/Margins.jpg)
+
+### Borders:
+
+In CSS, a **border** is a **line that surrounds an element**, separating it from other elements and defining its boundaries.
+
+#### Basic Syntax:
+
+```css
+selector {
+    border-width: value;
+    border-style: value;
+    border-color: value;
+}
+```
+
+#### Breakdown:
+
+* `border-width`: This thickness of the border, which can be specified in pixels (`px`), ems (`em`) or other valid CSS units. You can also use keywords like `thin`, `medium` and `thick`.
+* `border-style`: The style of the border, which can be one of the following:
+    - `dotted`: A series of dots.
+    - `dashed`: A series of dashes.
+    - `solid`: A solid line.
+    - `double`: Two solid lines.
+* `border-color`: The color of the border, which can be specified using named colors, hexadecimal values, RGB values or HSL values.
+
+#### Using Shorthand Notation:
+
+You can using shorthand notation to set all three border properties at once:
+
+##### Syntax:
+
+```css
+selector {
+    border: width style color;
+}
+```
+
+##### Shorthand Notation Example:
+
+```css
+p {
+    border: 2px solid blue;
+}
+```
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Borders</title>
+    <style>
+        .friday {
+            border: 3px solid black;
+        }
+        .saturday {
+            border-width: 4px;
+            border-style: dashed;
+            border-color: blue;
+        }
+        .sunday {
+            border: 5px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <div class="friday">
+        <h3>Friday</h3>
+        <p>7:00 PM - The Inception</p>
+    </div>
+    <div class="saturday">
+        <h3>Saturday</h3>
+        <p>8:00 PM - The Matrix</p>
+    </div>
+    <div class="sunday">
+        <h3>Sunday</h3>
+        <p>9:00 PM - Interstellar</p>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Borders](images/Borders.jpg)
