@@ -1450,3 +1450,50 @@ p {
 ##### Result:
 
 ![Borders](images/Borders.jpg)
+
+### Width and Height:
+
+In CSS, the **width** and **height** properties are used to set the **dimension of an element's content area**. These properties are essential for controlling the size and layout of elements on your web pages.
+
+#### Basic Syntax:
+
+```css
+selector {
+    width: value;
+    height: value;
+}
+```
+
+#### Breakdown:
+
+* `width`: The width of the element's content area.
+* `height`: The height of the element's content area.
+* `value`: The desired margin value, which can be specified in pixels (`px`), ems (`em`), percentages (`%`), or other valid CSS units. You can also use the keyword `auto` to let the browser automatically calculate the width or height based on the content.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Width and Height</title>
+    <style>
+        div {
+            width: 400px;
+            height: 250px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="border:2px solid black;">This is a division.</div>
+    <img src="https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54865.jpg" alt="Image">
+</body>
+</html>
+```
+
+##### Result:
+
+![Width and Height](images/Width%20and%20Height.jpg)
