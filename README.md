@@ -1497,3 +1497,55 @@ selector {
 ##### Result:
 
 ![Width and Height](images/Width%20and%20Height.jpg)
+
+### Recap - Box Models Part 1:
+
+Here is a recap based on what we have learned for part 1:
+
+- **Content**: Consists of the actual visible content within the box model.
+- **Padding**: The `padding` is the space between the **content of an element and its border**. This property can be used with the specific `padding-side` properties (replace side with top, right, bottom or left) or with shorthand notation with `padding`.
+- **margin**: The `margin` is the **space around an element, outside of any defined borders**. This property can be used with the specific `margin-side` property (replace side with top, right, bottom or left) or with shorthand notation with `margin`.
+- **Border**: The `border` is a **line that surrounds an element**, separating it from other elements and defining its boundaries. This property has three distinct properties, such as `border-width`, `border-style` and `border-color`, or you can use shorthand notation with `border` to insert all parameters at once.
+- **Width and Height**: The `width` and `height` properties are used to set the **dimension of an element's content area**. These properties are essential for controlling the size and layout of elements on your web pages.
+
+#### Example of a Webpage:
+
+```html
+<html>
+<head>
+    <title>Book collection</title>
+    <style>
+        .book {
+            width: 350px;
+            height: 150px;
+            padding: 15px;
+            border: 3px solid black;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <h3>Harry Potter and the Sorcerer's Stone</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Description: A young wizard's journey to defeat a dark wizard.</p>
+    </div>
+
+    <div class="book">
+        <h3>The Great Gatsby</h3>
+        <p>Author: F. Scott Fitzgerald</p>
+        <p>Description: A tragic story of wealth, love, and betrayal in the 1920s.</p>
+    </div>
+
+    <div class="book">
+        <h3>1984</h3>
+        <p>Author: George Orwell</p>
+        <p>Description: A dystopian novel about totalitarianism and surveillance.</p>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Recap - Box Model Part 1](images/Recap%20-%20Box%20Model%20Part%201.jpg)
