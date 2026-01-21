@@ -1610,3 +1610,71 @@ In this example, the two `<div>` elements have two distinct class attribute valu
 ##### Result:
 
 ![Box Sizing](images/Box%20Sizing.jpg)
+
+### Border Radius:
+
+In CSS, the `border-radius` property is used to create **rounded corners for an element**, allowing you to specify the radius of the curvature of each corner, giving you control over the shape of the element's border.
+
+#### Basic Syntax:
+
+Here is the simple syntax for using the `border-radius` property:
+
+```css
+selector {
+    border-radius: value;
+}
+```
+
+The `value` will result in the desired radius for the rounded corners, which can be specified in pixels (`px`), percentages (`%`) or other valid CSS units.
+
+- You can specify a single value to apply the same radius to all four corners. In the following example, all `<div>` elements will have rounded corners with a radius of `10px`.
+
+```css
+div {
+    border-radius: 10px;
+}
+```
+
+- You can set the different values for each corner individually, using the following order: top-left, top-right, bottom-right and bottom-left.
+
+```css
+.button {
+    border-radius: 10px 20px 30px 40px;
+}
+```
+
+- You can also specify only two values, the first value will apply to the top-left and bottom-right corners, and the second value will apply to the top-right and bottom-left corners.
+
+```css
+img {
+    border-radius: 20px 50px;
+}
+```
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Border Radius</title>
+    <style>
+        .one {
+            border: 3px solid #4287f5;
+            border-radius: 15px;
+        }
+        .two {
+            border: 3px solid magenta;
+            border-radius: 10px 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">This is a division with rounded corners.</div>
+    <div class="two">This is another division with rounded corners.</div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Border Radius](images/Border%20Radius.jpg)
