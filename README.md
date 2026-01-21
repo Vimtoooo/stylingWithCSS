@@ -1333,7 +1333,7 @@ div {
 }
 
 .button {
-    margin: 15px 30px 10px 5px;/* Sets margin for each side individually */
+    margin: 15px 30px 10px 5px; /* Sets margin for each side individually */
 }
 ```
 
@@ -1549,3 +1549,64 @@ Here is a recap based on what we have learned for part 1:
 ##### Result:
 
 ![Recap - Box Model Part 1](images/Recap%20-%20Box%20Model%20Part%201.jpg)
+
+## Box Model Part 2:
+
+### Box Sizing:
+
+The `box-sizing` property determines <i>how the total width and height of an element are calculated.</i> By default, the `width` and `height` properties only include the content's size and do not account for padding, borders, or margins. However, using the `box-sizing` property, you can change this behavior and make the `width` and `height` properties include the padding and border sizes as well. This can simple layout calculations and prevent unexpected sizing issues.
+
+#### Basic Syntax:
+
+```css
+selector {
+    box-sizing: value;
+}
+```
+
+The `value` will manipulate with the box-sizing behavior. This value can be one of the following:
+
+* `content-box`: This is the default value. The `width` and `height` properties **only include the content's size**. Padding, borders and margins are added outside of the specified width and height.
+* `border-box`: The `width` and `height` properties include the **content, padding and border sizes**. Margins are still added outside of the element.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Box Sizing</title>
+    <style>
+        .content-box-div {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid blue;
+            box-sizing: content-box;
+        }
+        .border-box-div {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box-div">This is a div with content-box.</div>
+    <div class="border-box-div">This is a div with border-box.</div>
+</body>
+</html>
+```
+
+#### Breakdown:
+
+In this example, the two `<div>` elements have two distinct class attribute values, such as `content-box-div` and `border-box-div`.
+
+- `.content-box-div`: Within the `.content-box-div` class selector, the `box-sizing` is set to  `content-box`. This means that the actual rendered width of the `<div>` will be `300px` (content) + `40px` (left and right padding) + `10px` (left and right border) = `350px`. The height will be calculated similarly.
+
+- `.border-box-div`: On the other hand, the element with the class `border-box-div` has a `box-sizing` value of `border-box`. In this case, the specified `width` of `300px` will include the content, padding and border. The actual content area will shrink to accommodate the padding and border, resulting in a content width of `300px` - `40px` (left and right padding) - `10px` (left and right border) = `250px`. The height will be calculated similarly.
+
+##### Result:
+
+![Box Sizing](images/Box%20Sizing.jpg)
