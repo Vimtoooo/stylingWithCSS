@@ -1824,3 +1824,53 @@ You can also control the overflow behavior for the horizontal and vertical direc
 ##### Result:
 
 ![The Overflow](images/Overflow.jpg)
+
+### Box Shadows:
+
+In CSS, the `box-shadow` property is used to **add shadow effects to an element's box**. This property allows you to create visually appealing effects that make elements appear to "pop out" from the page or create depth and dimension.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using the `box-shadow` property:
+
+```css
+selector {
+    box-shadow: horizontal-offset vertical-offset blur spread color inset;
+}
+```
+
+#### Breakdown:
+
+- `horizontal-offset`: The horizontal distance of the shadow from the element. Positive values move the shadow to the right, and negative values move it to the left.
+- `vertical-offset`: The vertical distance of the shadow from the element. Positive values move the shadow downward, and negative values move it upward.
+- `blur` (Optional): The blur radius of the shadow. A larger value creates a more blurred shadow. If omitted, it defaults to 0 (no blur).
+- `spread` (Optional): The spread radius of the shadow. Positive values cause the shadow to expand, and negative values cause it to shrink.
+- `color` (Optional): The color of the shadow. It can be specified using named colors, hexadecimal values, RGB values or HSL values.
+- `inset` (Optional): Changes the shadow from an outer shadow (using `outset`) to an inner shadow (using `inset`).
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Box Shadow</title>
+    <style>
+        div {
+            box-shadow: 10px 10px 5px grey;
+        }
+        p {
+            box-shadow: -5px -5px 10px 2px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div>This is a division with a box shadow.</div>
+    <br>
+    <p>This is a paragraph with a box shadow.</p>
+</body>
+</html>
+```
+
+##### Result:
+
+![Box Shadows](images/Box%20Shadows.jpg)
