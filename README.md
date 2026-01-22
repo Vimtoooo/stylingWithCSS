@@ -1678,3 +1678,149 @@ img {
 ##### Result:
 
 ![Border Radius](images/Border%20Radius.jpg)
+
+### Overflow:
+
+In CSS, the `overflow` property <i>controls what happens to content</i> that **overflows its element's box**. When an element's content is too large to fit within the specified width and height, the `overflow` property determines whether to clip the content, add scrollbars, or display the overflowing content outside the element's boundaries.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using the `overflow` property:
+
+```css
+selector {
+    overflow: value;
+}
+```
+
+The `value` will represent the desired overflow behavior, which can be one of the following:
+
+* `visible`: This is the default value. Overflowing content is rendered outside the element's box and may overlap adjacent elements.
+* `hidden`: Overflowing content is clipped, and the rest of the content is invisible.
+* `scroll`: Add two scrollbars (for the horizontal and vertical axis) to the element, allowing users to scroll through the overflowing content.
+* `auto`: The browser determines whether to add scrollbars based on the content and available space. Typically, scrollbars are added only when necessary.
+
+#### Demonstration:
+
+Take this HTML document for example:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        div {
+            width: 200px;
+            height: 100px;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae officia laudantium deleniti suscipit, aperiam sunt ipsa, corporis architecto, facere eveniet ab! Libero accusamus quia eveniet. Aliquam consequatur deleniti delectus!</p>
+    </div>
+</body>
+</html>
+```
+
+##### Visible:
+
+For `visible`, you will be able to view all of the available content, noting that this is always the default value when not using the `overflow` property.
+
+```css
+div {
+    width: 200px;
+    height: 100px;
+    overflow: visible;
+}
+```
+
+![Visible](images/Visible.jpg)
+
+##### Hidden:
+
+The `hidden` value will clip a specific part of the content, depending on the `width` and `height` values, trimming the content into a smaller part, making the rest invisible.
+
+```css
+div {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+```
+
+![Hidden](images/Hidden.jpg)
+
+##### Scroll:
+
+The `scroll` give you the control to view the content in a smaller, compact area, with the ability to visualize the contents with the scrollbars, from the horizontal scrollbar to the vertical scrollbar.
+
+```css
+div {
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+```
+
+![Scroll](images/Scroll.jpg)
+
+##### Auto:
+
+The `auto` makes the browser think whether to insert a scrollbar, based on the size of the contents, dimensions and available space, possibly generating a much more refined and cleaner overflow demonstration.
+
+```css
+div {
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}
+```
+
+![Auto](images/Auto.jpg)
+
+> [!NOTE]
+> The horizontal scrollbar was removed because there was enough space to maneuver with the `width` size, and the `<p>` paragraph element is dynamic, when a certain dimension has reached the end of its available width, it will start a new line, but only needing the vertical scrollbar.
+
+#### `Overflow-x` and `overflow-y`:
+
+You can also control the overflow behavior for the horizontal and vertical directions independently using the `overflow-x` and `overflow-y` properties for absolute precision.
+
+```css
+.example {
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: scroll; /* Add a vertical scrollbar */
+}
+```
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Overflow</title>
+    <style>
+        div {
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a long text that will likely overflow its container. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![The Overflow](images/Overflow.jpg)
