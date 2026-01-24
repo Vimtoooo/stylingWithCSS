@@ -1930,3 +1930,65 @@ This is the HTML document for a simple newspaper article:
 ##### Result:
 
 ![Recap - Box Model Part 2](images/Recap%20-%20Box%20Model%20Part%202.jpg)
+
+## Flex Box:
+
+### What is a Flex box?
+
+In CSS, the **Flexbox**  layout is a powerful tool that provides an efficient way to **align and distribute space among items in a container**. With Flexbox, you can control the alignment, direction, order and size of elements within a container, creating flexible and dynamic layouts that adapt to different screen sizes and devices.
+
+#### How to use Flexbox:
+
+To be able to manipulate with Flexbox, you will first need to define a **flex container**. This is done by setting the `display` property of an element to the value of `flex` or `inline-flex`. Once you've created a flex container, its direct children automatically become flex items.
+
+#### Basic Syntax:
+
+Here's the basic syntax for creating a flex container:
+
+```css
+.container {
+    display: flex;
+}
+```
+
+#### Breakdown:
+
+* `display: flex;`: This declaration turns the selected element into a flex container and its direct children into flex items.
+
+#### After Defining a Flexbox:
+
+Once you have a flex container you can use various Flexbox properties to <i>control the layout of its flex items</i>. Some of the most commonly used properties include:
+
+* `flex-direction`: Specifies the direction of the flex items (row, column, row-reverse and column-reverse).
+* `justify-content`: Aligns the flex items along the cross axis (e.g., flex-start, flex-end, center, space-between and space-around).
+* `align-items`: Aligns the flex items along the cross axis (e.g., flex-start, flex-end, center, baseline and stretch).
+* `flex-wrap`: Controls whether the flex items should wrap onto multiple lines (wrap, nowrap and wrap-reverse).
+* `align-content`: Aligns the flex lines when there is extra space in the cross axis (similar to `justify-content` but for multiple lines).
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>What is a Flex Box?</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Flexbox Introduction](images/Flexbox%20Introduction.jpg)
