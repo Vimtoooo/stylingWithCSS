@@ -2053,3 +2053,66 @@ The `value` can pursue one of the desired values to determine the direction foe 
 ##### Result:
 
 ![Flex Direction](images/Flex%20Direction.jpg)
+
+### Justify Content:
+
+The `justify-content` property controls how flex items are **spaced along the main axis of a flex container**. It helps align items and distribute extra space where there is room left. This property is useful for positioning items horizontally (in a row) or vertically (in a column), making layouts more flexible and responsive.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using the `justify-content` property:
+
+```css
+.container {
+    display: flex;
+    justify-content: value;
+}
+```
+
+#### Breakdown:
+
+The `value` will represent the desired alignment for the flex items along the main axis, which can be one of the following:
+
+* `flex-start`: This is the default value, items are packed toward the start of the line.
+* `flex-end`: Items are packed toward the end of the line.
+* `center`: Items are centered along the line.
+* `space-between`: Items are evenly distributed along the line, with the first item at the start and the last item at the end.
+* `space-around`: Items are evenly distributed along the line, with equal space around them. 
+* `space-evenly`: Items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Justify Content</title>
+    <style>
+        .fruits, .vegetables {
+            display: flex;
+        }
+        .fruits {
+            justify-content: center;
+        }
+        .vegetables {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="fruits">
+        <div>Apple</div>
+        <div>Banana</div>
+        <div>Mango</div>
+    </div>
+    <div class="vegetables">
+        <div>Tomato</div>
+        <div>Potato</div>
+        <div>Cucumber</div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Justify Content](images/Justify%20Content.jpg)
