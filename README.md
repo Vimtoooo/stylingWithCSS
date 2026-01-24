@@ -1992,3 +1992,64 @@ Once you have a flex container you can use various Flexbox properties to <i>cont
 ##### Result:
 
 ![Flexbox Introduction](images/Flexbox%20Introduction.jpg)
+
+### Flex Direction:
+
+In CSS, the `flex-direction` property controls the **direction in which items are arranged** inside a flex container. It decides whether the items are placed in a row or a column. This also affects how properties like `justify-content` and `align-items` work. Using `flex-direction` correctly helps in <i>building flexible and responsible layouts</i>.
+
+#### Basic Syntax:
+
+```css
+.container {
+    display: flex;
+    flex-direction: value;
+}
+```
+
+#### Breakdown:
+
+The `value` can pursue one of the desired values to determine the direction foe the flex items, which can be one of the following:
+
+* `row`: This is the default value. Flex items are placed in a row from left to right. The main axis is horizontal, and the cross axis is vertical.
+* `row-reverse`: Flex items are placed in a row, from right to left. The main axis is horizontal, and the cross axis is vertical.
+* `column`: Flex items are placed in a column, from top to bottom. The main axis is vertical, and the cross axis is horizontal.
+* `column-reverse`: Flex items are placed in a column, from bottom to top. The main axis is vertical, and the cross axis is horizontal.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Flex Direction</title>
+    <style>
+        .container1, .container2 {
+            display: flex;
+        }
+        /* Write CSS rules here */
+        .container1 {
+            flex-direction: column;
+        }
+        .container2 {
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div>Another Item 1</div>
+        <div>Another Item 2</div>
+        <div>Another Item 3</div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Flex Direction](images/Flex%20Direction.jpg)
