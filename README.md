@@ -2116,3 +2116,70 @@ The `value` will represent the desired alignment for the flex items along the ma
 ##### Result:
 
 ![Justify Content](images/Justify%20Content.jpg)
+
+### Align Items:
+
+In CSS, the `align-items` property controls how **flex items are aligned along the cross axis** (the opposite of the main axis). It helps position items vertically in a row or horizontally in a column. This property is useful for making <i>layouts more flexible and responsive</i>.
+
+#### Basic Syntax:
+
+```css
+.container {
+    display: flex;
+    align-items: value;
+}
+```
+
+#### Breakdown:
+
+The `value` will determine the alignment for the flex items along the cross axis, which can be one of the following:
+
+* `stretch`: This is the default value. Flex items are stretched to full the container along the cross axis while respecting `min-width` / `max-width` and `min-height` / `max-height`.
+* `flex-start`: Flex items are placed at the start of the cress axis.
+* `flex-end`: Flex items are placed at the end of the cress axis.
+* `center`: Flex items are centered along the cross axis.
+* `baseline`: Flex items are aligned such as their baselines align.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Align Items</title>
+    <style>
+        .container {
+            display: flex;
+            height: 200px; /* Added for visualization */
+            border: 2px solid darkblue; /* Added for visualization */
+        }
+        /* Write CSS rules here */
+        .seas {
+            display: flex;
+            align-items: center;
+        }
+        .oceans {
+            display: flex;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="seas">
+            <div>Black Sea</div>
+            <div>Caribbean Sea</div>
+            <div>Dead Sea</div>
+        </div>
+        <div class="oceans">
+            <div>Atlantic Ocean</div>
+            <div>Pacific Ocean</div>
+            <div>Indian Ocean</div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Align Items](images/Align%20Items.jpg)
