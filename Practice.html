@@ -1,21 +1,37 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Testing</title>
+    <title>Flex Box Challenge</title>
     <style>
-        h1 {
-            text-align: center;
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-end;
         }
-        div {
-            display: inline-flex;
-            flex-direction: row;
-            align-content: center;
+        .item1 {
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .item2 {
+            background-color: lightgreen;
+            padding: 20px;
+        }
+        .item3 {
+            background-color: lightcoral;
+            padding: 30px;
+        }
+        .item4 {
+            background-color: lightyellow;
+            padding: 40px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae officia laudantium deleniti suscipit, aperiam sunt ipsa, corporis architecto, facere eveniet ab! Libero accusamus quia eveniet. Aliquam consequatur deleniti delectus!</p>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
     </div>
 </body>
 </html>

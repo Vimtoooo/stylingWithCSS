@@ -2025,7 +2025,6 @@ The `value` can pursue one of the desired values to determine the direction foe 
         .container1, .container2 {
             display: flex;
         }
-        /* Write CSS rules here */
         .container1 {
             flex-direction: column;
         }
@@ -2183,3 +2182,132 @@ The `value` will determine the alignment for the flex items along the cross axis
 ##### Result:
 
 ![Align Items](images/Align%20Items.jpg)
+
+### The Perfect Center:
+
+In CSS, achieving the <i>"perfect center"</i>, where you would successfully center an element both horizontally and vertically within its parent, is a common layout challenge.
+
+Flexbox provides an elegant and straightforward solution to this problem. By combining the `justify-content` and `align-items` properties, you can easily center a child element within its flex container, regardless of the child's or parent's size.
+
+#### Basic Syntax:
+
+Here is how to achieve the perfect center using Flexbox:
+
+```css
+.container {
+    display: flex; /* Turn the parent into a flex container */
+    justify-content: center; /* Center the child horizontally along the main axis */
+    align-items: center; /* Center the child vertically along the cross axis */
+}
+```
+
+#### Steps to making the Perfect Center:
+
+To make this technique work effectively, ensure that the flex container has a **defined height**. If the container's height is not explicitly set, it will only be as tall as its content, and vertical centering may not be apparent.
+
+Here is an example of how to use this technique in HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Perfect Center</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Set a specific height for the container */
+            border: 1px solid black; /* Optional: Add a border for visualization */
+        }
+
+        .child {
+            padding: 20px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">This is centered</div>
+    </div>
+</body>
+</html>
+```
+
+##### Illustration:
+
+![The perfect center technique](images/The%20perfect%20center%20technique.jpg)
+
+In this example, the `.container` element has a height of `300px` and the `.child` element will be perfectly centered both horizontally and vertically within it.
+
+### Recap - Flex Box:
+
+Here is the recap for the flex box and its main properties:
+
+* **`display`**: Defines and instantiates a new Flexbox by typing `flex` into the value slot to be used within an HTML document. However, it is up to the user whether or not he desires to modify its pre-made Flexbox into another level.
+* **`flex-direction`**: A property that controls the **direction in which items are arranged** inside a flex container. It can pursue one of the values:
+    - `row`: This is the default value. Flex items are placed in a row from left to right. The main axis is horizontal, and the cross axis is vertical.
+    - `row-reverse`: Flex items are placed in a row, from right to left. The main axis is horizontal, and the cross axis is vertical.
+    - `column`: Flex items are placed in a column, from top to bottom. The main axis is vertical, and the cross axis is horizontal.
+    - `column-reverse`: Flex items are placed in a column, from bottom to top. The main axis is vertical, and the cross axis is horizontal.
+* **`justify-content`**: A property that controls how flex items are **spaced along the main axis of a flex container (x-axis)**. Any of these values can be deposited within this property:
+    - `flex-start`: This is the default value, items are packed toward the start of the line.
+    - `flex-end`: Items are packed toward the end of the line.
+    - `center`: Items are centered along the line.
+    - `space-between`: Items are evenly distributed along the line, with the first item at the start and the last item at the end.
+    - `space-around`: Items are evenly distributed along the line, with equal space around them. 
+    - `space-evenly`: Items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+* **`align-items`**: A property which will align flex items that are **spaced along the cross axis (opposite of the main axis) of a flex container (y-axis)**. These values can be inserted for manipulation:
+    - `stretch`: This is the default value. Flex items are stretched to full the container along the cross axis while respecting `min-width` / `max-width` and `min-height` / `max-height`.
+    - `flex-start`: Flex items are placed at the start of the cress axis.
+    - `flex-end`: Flex items are placed at the end of the cress axis.
+    - `center`: Flex items are centered along the cross axis.
+    - `baseline`: Flex items are aligned such as their baselines align.
+* **The "Perfect Center"**: A simple technique which requires the management of the `justify-content` and `align-items` properties to align the flex items in the center of the Flexbox. Both of the stored values for there properties must pursue the value of **`center`** for any successes.
+
+#### Example of a Webpage:
+
+```html
+<html>
+<head>
+    <title>Flex Box Challenge</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .item1 {
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .item2 {
+            background-color: lightgreen;
+            padding: 20px;
+        }
+        .item3 {
+            background-color: lightcoral;
+            padding: 30px;
+        }
+        .item4 {
+            background-color: lightyellow;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Recap - Flex Box](images/Recap%20-%20Flex%20box.jpg)
