@@ -1,9 +1,18 @@
 body {
-    background-color: lightcyan;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+input {
+    width: 100%;
+    padding: 3px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin: 5px;
+    box-sizing: border-box;
 }
 
 .login-form {
