@@ -5,3 +5,12 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+.login-form {
+    background-color: white;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 2px grey;
+    border: 2px dotted black;
+    text-align: center;
+}
