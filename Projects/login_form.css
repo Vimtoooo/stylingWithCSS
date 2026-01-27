@@ -15,6 +15,16 @@ input {
     box-sizing: border-box;
 }
 
+button {
+    width: 100px;
+    background-color: hsla(0, 0%, 88%, 0.563);
+    color: rgba(0, 0, 0, 0.4);
+    padding: 3px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px grey;
+}
+
 .login-form {
     background-color: white;
     padding: 3px;
