@@ -2311,3 +2311,69 @@ Here is the recap for the flex box and its main properties:
 ##### Result:
 
 ![Recap - Flex Box](images/Recap%20-%20Flex%20box.jpg)
+
+## Layout Techniques:
+
+### Block Vs Inline Elements:
+
+In HTML, elements are categorized as either **block-level** or **inline** elements, based on how they are displayed on the page. Understanding the difference between these two types of elements is crucial for creating well-structured and visually appealing layouts. Let's explore the characteristics and behaviors ob block-level and inline elements.
+
+#### Block-level Elements:
+
+A block-level element always starts no a new line and takes up the full width available, stretching out to the left and right as far as it can. It creates a "block" of content.
+
+##### Examples of Block-level Elements:
+
+* `<div>`
+* `<h1>` - `<h6>`
+* `<p>`
+* `<ul>`, `<ol>`, `<li>`
+* `<form>`
+* `<table>`
+* `<header>`, `<footer>`, `<section>`, `<article>`, `<nav>`...
+
+#### Inline Elements:
+
+An inline element does not start on a new line and only takes up as much width as necessary to fit its content. It allows inline elements to flow within a line of text or inside a block-level element.
+
+##### Examples of Inline Elements:
+
+* `<span>`
+* `<a>`
+* `<img>`
+* `<strong>`, `<em>`
+* `<input>`, `<button>`, `<label>`
+* `<textarea>`...
+
+#### Visual Explanation:
+
+Mentally imagining these elements in action could be difficult to see being separated by the block-level elements, so here is a simple demonstration of how these elements are separated from each other.
+
+```html
+<html>
+<head>
+    <title>Block vs Inline Elements</title>
+    <style>
+        div, p, h1 {
+            background-color: lightgray;
+            border: 1px solid blue;
+        }
+        span, a, img {
+            background-color: lightyellow;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>This is a div element.</div>
+    <p>This is a paragraph with a <span>span element</span> inside.</p>
+    <h1>This is a heading element.</h1>
+    <a href="#">This is a link</a>
+    <img src="https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54865.jpg" alt="Image" width="100">
+</body>
+</html>
+```
+
+#### Result:
+
+![Block-level and inline](images/Block-level%20and%20Inline.jpg)
