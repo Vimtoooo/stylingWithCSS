@@ -2377,3 +2377,60 @@ Mentally imagining these elements in action could be difficult to see being sepa
 #### Result:
 
 ![Block-level and inline](images/Block-level%20and%20Inline.jpg)
+
+### Positioning Basics:
+
+In CSS, the **positioning** is a set of properties that allow you to **control the position of elements on a web page**, and one of the basic properties that you can use is the `position` property. By default, elements are positioned according to the normal flow of the HTML document. However, with CSS positioning, you can take elements out of the normal flow and place them in specific locations relative to their containing element or the viewport.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using the `position` property:
+
+```css
+selector {
+    position: value
+}
+```
+
+There are several values for the `position` property, each with its own behavior:
+
+* `static`: This is the default value, the element is positioned according to the normal flow of the document. The `top`, `right`, `bottom` and `left` properties have no effect.
+* `relative`: The element is positioned relative to its normal position. Setting the `top`, `right`, `bottom` and `left` properties will move the element away from its normal position, but it still occupies space in the normal flow. 
+* `absolute`: The element is removed from the normal flow and positioned relative to its nearest positioned acestor (an ancestor with a position other than `static`). If no positioned ancestor is found, it is positioned relative the the initial containing block (usually the viewport).
+* `fixed`: The element is removed from the normal flow and positioned relative to the viewport. It remains fixed in place even when the page is scrolled.
+* `sticky`: It positions an element based on the user's scroll position, acting as a hybrid of `relative` and `fixed` positioning.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Positioning Basics</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Positioning Basics](images/Positioning%20Basics.jpg)
