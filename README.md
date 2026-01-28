@@ -2640,3 +2640,74 @@ selector {
 ##### Result:
 
 ![Fixed Positioning](videos/chrome_dkCkNKBIGE.gif)
+
+### Z-Index Basics:
+
+In CSS, the `z-index` property controls the **stacking order of positioned elements (elements with a position other that `static`)**. When elements overlap, the `z-index` determines <i>which element appears on top and which appears behind</i>. Elements with a higher `z-index` value are stacked in from of the elements with a lower value.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using the `z-index` property:
+
+```css
+selector {
+    position: relative; /* or absolute, fixed, or sticky */
+    z-index: value;
+}
+```
+
+#### Breakdown:
+
+* `position: relative;` (or `absolute`, `fixed` or `sticky`): The element must be positioned for `z-index` to have an effect.
+* `value`: An integer value that represents the stacking order. Elements with higher values are stacked in front of elements with lower values. The value can be positive, negative, or zero.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Z-Index Basics</title>
+    <style>
+        .box1 {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            z-index: 3;
+        }
+        .box2 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen;
+            z-index: 2;
+        }
+        .box3 {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+</body>
+</html>
+```
+
+##### Result:
+
+> [!NOTE]
+> Observe how the z-index values affect the stacking order of the boxes, with box1 on top and box3 at the bottom.
+
+![Z-Index Basics](images/Z-Index%20Basics.jpg)
