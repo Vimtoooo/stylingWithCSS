@@ -2505,3 +2505,71 @@ In this example, we manipulate with the `position: relative;` property and value
 ##### Result:
 
 ![Relative Positioning](images/Relative%20Positioning.jpg)
+
+### Absolute Positioning:
+
+In CSS, the **absolute positioning** lets you place an element **exactly where you want it inside its container**. When you set `position: absolute;`, the element is removed from the normal layout, so other elements act as if it's not there. It positions itself based on the nearest ancestor with a set position (not `static`). If there isn't one, it positions itself relative to the page.
+
+#### Basic Syntax:
+
+```css
+.parent {
+    position: relative; /* Make the parent a positioned ancestor */
+}
+
+.child {
+    position: absolute;
+    top: value;
+    right: value;
+    bottom: value;
+    left: value;
+}
+```
+
+#### Breakdown:
+
+* `.parent`: The CSS selector that targets the parent element, setting `position: relative;` allows absolutely positioned children.
+* `.child`: The CSS selector that targets the element you want to position absolutely.
+* `position: absolute;`: This declaration sets the element's positioning scheme to absolute, removing it from the normal flow.
+* `top`, `right`, `bottom` and `left`: These properties specify the position of the element relative to its nearest positioned ancestor. You an use positive or negative values, specified in pixels (`px`), ems (`em`), percentages (`%`) or other valid CSS units.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Absolute Positioning</title>
+    <style>
+        .parent {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        .box2 {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            width: 150px;
+            height: 120px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Absolute Positioning](images/Absolute%20Positioning.jpg)
