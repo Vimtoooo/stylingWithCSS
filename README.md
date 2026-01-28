@@ -2573,3 +2573,70 @@ In CSS, the **absolute positioning** lets you place an element **exactly where y
 ##### Result:
 
 ![Absolute Positioning](images/Absolute%20Positioning.jpg)
+
+### Fixed Positioning:
+
+The **fixed positioning** value keeps an element in the **same spot on the screen**, <i>no matter how much you scroll</i>. When you set `position: fixed;`, the element is removed from the normal layout, so other elements ignore it. It says fixed to the browser window, making it useful for headers, footers, or menus that should always be visible.
+
+#### Basic Syntax:
+
+```css
+selector {
+    position: fixed;
+    top: value;
+    right: value;
+    bottom: value;
+    left: value;
+}
+```
+
+##### Breakdown:
+
+* `position: fixed;`: This declaration sets the element's positioning scheme to **fixed**.
+* `top`, `right`, `bottom` and `left`: These properties specify the positioning of the element relative to the viewport.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Fixed Positioning</title>
+    <style>
+    .header {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-color: #fcc726;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">This is the header</div>
+    <p>This is some content below the header. Scroll down to see the fixed positioning in action.</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+    <p>More content here...</p>
+</body>
+</html>
+```
+
+##### Result:
+
+![Fixed Positioning](videos/chrome_dkCkNKBIGE.gif)
