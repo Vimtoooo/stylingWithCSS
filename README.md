@@ -2434,3 +2434,74 @@ There are several values for the `position` property, each with its own behavior
 ##### Result:
 
 ![Positioning Basics](images/Positioning%20Basics.jpg)
+
+### Relative Positioning:
+
+In CSS, **relative positioning** is a positioning scheme that allows you to <i>position an element relative to its normal position in the document flow</i>. When an element is set to `position: relative;`, it remains in the normal flow, but you can then use the `top`, `right`, `bottom` and `left` properties to offset it from its original position.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using relative positioning:
+
+```css
+selector {
+    position: relative;
+    top: value;
+    right: value;
+    bottom: value;
+    left: value;
+}
+```
+
+#### Breakdown:
+
+* `position: relative;`: This declaration sets the element's positioning scheme to relative.
+* `top`, `right`, `bottom` and `left`: These properties specify the offset of the element from its normal position. You can use positive or negative values, specified in pixels (`px`), ems (`em`), percentages (`%`), or other valid CSS units.
+
+#### Example of Usage:
+
+In this example, we manipulate with the `position: relative;` property and value to alter the positioning of the green box (`box2`), by moving slightly 20 pixels down and 40 pixels to the right. Down below is the document:
+
+```html
+<html>
+<head>
+    <title>Relative Positioning</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        .box2 {
+            position: relative;
+            top: 20px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Relative Positioning](images/Relative%20Positioning.jpg)
