@@ -2320,7 +2320,7 @@ In HTML, elements are categorized as either **block-level** or **inline** elemen
 
 #### Block-level Elements:
 
-A block-level element always starts no a new line and takes up the full width available, stretching out to the left and right as far as it can. It creates a "block" of content.
+A block-level element always starts on a new line and takes up the full width available, stretching out to the left and right as far as it can. It creates a "block" of content.
 
 ##### Examples of Block-level Elements:
 
@@ -2711,3 +2711,109 @@ selector {
 > Observe how the z-index values affect the stacking order of the boxes, with box1 on top and box3 at the bottom.
 
 ![Z-Index Basics](images/Z-Index%20Basics.jpg)
+
+### Recap - Layout Techniques:
+
+Let's recap on what we have learned in this topic!
+
+* **Block-level Elements**: Elements that pursue an opening and closing tag, where they always start on a new line and takes up the full width available, creating a "block" of content, this includes the vast majority of tags like divisors, paragraphs, semantic tags and etc:
+    - `<div>`
+    - `<h1>` - `<h6>`
+    - `<p>`
+    - `<ul>`, `<ol>`, `<li>`
+    - `<form>`
+    - `<table>`
+    - `<header>`, `<footer>`, `<section>`, `<article>`, `<nav>`...
+* **Inline Elements**: Elements that do not start on a new line and only takes up as much width as necessary to fit its content. It allows inline elements to flow within a line of text or inside a block-level element, this include <i>self-closing tags</i>:
+    - `<span>`
+    - `<a>`
+    - `<img>`
+    - `<strong>`, `<em>`
+    - `<input>`, `<button>`, `<label>`
+    - `<textarea>`...
+* `position`: An attribute which **controls the positioning of elements** and content on a web page. There are several values for this property:
+    - `static`: This is the default value, the element is positioned according to the normal flow of the document. The `top`, `right`, `bottom` and `left` properties have no effect.
+    - `relative`: The element is positioned relative to its normal position. Setting the `top`, `right`, `bottom` and `left` properties will move the element away from its normal position, but it still occupies space in the normal flow. 
+    - `absolute`: The element is removed from the normal flow and positioned relative to its nearest positioned acestor (an ancestor with a position other than `static`). If no positioned ancestor is found, it is positioned relative the the initial containing block (usually the viewport).
+    - `fixed`: The element is removed from the normal flow and positioned relative to the viewport. It remains fixed in place even when the page is scrolled.
+    - `sticky`: It positions an element based on the user's scroll position, acting as a hybrid of `relative` and `fixed` positioning.
+* `z-index`: A property which controls the **stacking order of positioned elements (elements with a `position` other that `static`)**. You can control this factor by modifying the value, which must be an integer (1, 5, -3, ...), the higher the int value, <i>the closer the element will be to being in front of the stack</i>.
+
+#### Example of a Webpage:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Restaurant</title>
+    <style>
+        /* Fixed Header */
+        header {
+            background-color: #ff6f61;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            z-index: 10;
+        }
+        /* Menu Section (Relative) */
+        .menu {
+            margin-top: 70px; /* Space for fixed header */
+            padding: 20px;
+            background-color: #f8f8f8;
+            font-size: 18px;
+            position: relative;
+        }
+        /* Promotions Box (Absolute) */
+        .promotions {
+            background-color: #ffdf00;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header>
+        Pizza Restaurant
+    </header>
+    <!-- Menu Section -->
+    <div class="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li>Margherita</li>
+            <li>Pepperoni</li>
+            <li>Veggie</li>
+            <li>Hawaiian</li>
+        </ul>       
+        <p>Order now and enjoy!</p>
+    </div>
+    <!-- Promotions Box -->
+    <div class="promotions">
+        <p>Get 20% off your first order!</p>
+    </div>
+    <div class="pizza-info">
+        <h2>About Pizza</h2>
+        <p>Pizza, a dish with origins in Italy, is one of the world's most beloved foods. It was first made in Naples during the 18th century, with the classic Margherita pizza being named after Queen Margherita of Savoy. The traditional pizza is known for its simple ingredients: a thin crust, tomato sauce, mozzarella cheese, and fresh basil.</p>
+        <p>Over the years, pizza has evolved into a variety of regional styles, from thin-crust New York-style pizza to deep-dish Chicago pizza. While the toppings have diversified, the tradition of sharing a pizza with family and friends remains an essential part of the pizza experience.</p>
+        <p>In Italy, pizza is often enjoyed casually, typically paired with a glass of wine or soda. It is a symbol of Italian culture, and many believe that a good pizza is a representation of the country's culinary expertise and passion for food.</p>
+        <p>Pizza's global reach has led to many variations and adaptations in different countries. In Japan, for example, toppings like teriyaki chicken and squid are popular, while in Brazil, green peas and corn are commonly found on pizzas. In the United States, pizza has become a staple of fast food, with different regions offering their unique twists, such as the deep-dish pizza from Chicago and the thin crust of New York City.</p>
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Recap - Layout Techniques](videos/chrome_oeTsGtvHUD.gif)
