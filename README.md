@@ -2817,3 +2817,105 @@ Let's recap on what we have learned in this topic!
 ##### Result:
 
 ![Recap - Layout Techniques](videos/chrome_oeTsGtvHUD.gif)
+
+## Responsive Design Basics:
+
+### What is Responsive Design?
+
+In web design, the **responsive design** is an approach that aims to create web pages that adapt and provide an optimal viewing experience across a wide range of devices, <i>from desktop computer monitors to mobile phones</i>.
+
+A responsive website automatically adjusts its layout, content, and functionality based on the screen size, resolution, and orientation of the device it is being viewed on. The goal of responsive design is to ensure that users can easily access and interact with the website, regardless of the device they are using.
+
+#### The Techniques of Responsive Design:
+
+Responsive design is achieved through a combination of techniques, including:
+
+* **Flexible grids and layouts**: Using CSS grid or Flexbox to create layouts that can adapt to different screen sizes, making the website more dynamic for the user.
+* **Flexible images and media**: Ensuring that images and other media scale proportionally with the layout.
+* **Media queries**: Applying different CSS styles based on the characteristics of the device, such as screen width, height, and orientation.
+
+As more people use mobile devices to browse the web, responsive design is essential for making websites easy to use. It ensures your site looks good and works well on any device, giving users a smooth and consistent experience.
+
+#### Use of Viewport:
+
+Use **viewport** unites for responsive typography:
+
+```css
+h1 {
+    font-size: 5vw;
+}
+p {
+    font-size: 3vw;
+}
+```
+
+#### Proper Scaling:
+
+Make images responsive with proper scaling:
+
+```css
+/* Fixed height - causes distortion */
+.fixed-height {
+  width: 100%;
+  height: 150px;
+}
+
+/* Auto height - maintains aspect ratio */
+.auto-height {
+  width: 100%;
+  height: auto;
+}
+```
+
+#### Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Responsive Design?</title>
+    <style>
+        h1 {
+            font-size: 5vw;
+        }
+        p {
+            font-size: 3vw;
+        }
+        .fixed-height {
+            width: 100%;
+            height: 150px;
+        }
+        .auto-height {
+            width: 100%;
+            height: auto;
+        }
+        .container {
+            width: 300px;
+            border: 2px solid #ccc;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mount Everest: The World's Highest Peak</h1>
+    <p>Mount Everest, standing at 8,848.86 meters (29,031.7 feet), is the tallest mountain on Earth. Located in the Himalayas on the border between Nepal and Tibet, it attracts climbers from around the world. Scaling Everest is a challenging journey due to its extreme weather, thin air, and rough terrain.</p>
+    
+    <div class="container">
+        <h3>Fixed Height (Distorted)</h3>
+        <img class="fixed-height" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="Distorted Image">
+    </div>
+    
+    <div class="container">
+        <h3>Auto Height (Preserved Aspect Ratio)</h3>
+        <img class="auto-height" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="Proper Ratio Image">
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Simple Responsive Design](videos/chrome_aDzFgCBz90.gif)
