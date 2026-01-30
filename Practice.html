@@ -4,10 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viewport Meta Tag</title>
+    <title>Fluid Layouts</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .sidebar {
+            width: 25%;
+            float: left;
+            background-color:#92f0ab;
+        }
+        .main {
+            width: 75%;
+            float: right;
+            background-color:#92d4f0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Responsive Web Page</h1>
-    <p>This page uses the viewport meta tag to adapt to different screen sizes.</p>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main Content</div>
+    </div>
 </body>
 </html>

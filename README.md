@@ -2960,3 +2960,52 @@ These are the common viewport settings:
 ##### Result:
 
 ![Viewport Meta Tag](videos/NVIDIA_Overlay_VwvHG9PD2a.gif)
+
+### Fluid Layouts:
+
+In responsive web design, a **fluid layout** adjusts to different screen sizes using flexible grids and relative units like percentages instead of fixed pixel values. This helps the layout expand or shrink to fit any screen, ensuring a smooth user experience on all devices.
+
+#### Key Principles:
+
+The key principles of fluid layouts include:
+
+1. **Relative Units**: Using percentages (`%`), viewport units (`vw`, `vh`), or ems (`em`) instead of fixed pixels (`px`) for widths, heights, margins and padding.
+2. **Flexible Grids**: Using CSS Grid or Flexbox to create grid-based layouts that can adapt to different screen sizes.
+3. **Max-width and min-width**: Setting maximum and minimum widths for elements to prevent them from becoming too wide or too narrow on extreme screen sizes.
+
+#### Example of Usage:
+
+```html
+<html>
+<head>
+    <title>Fluid Layouts</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .sidebar {
+            width: 25%;
+            float: left;
+        }
+        .main {
+            width: 75%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" style="background-color:#92f0ab">Sidebar</div>
+        <div class="main" style="background-color:#92d4f0">Main Content</div>
+    </div>
+</body>
+</html>
+```
+
+In this example, the `.container` element has a fluid width of `80%`, which means it will always take up 80% of the viewport width. The `margin` is set to `0` on `auto`, centering the layout of the `.container` divisor, setting the top and bottom margins to zero and automatically making the browser calculate the equal margins for the left and right sizes. The `.sidebar` element will occupy the `width` of `25%` in the `.container` while the `.main` occupies `75%`, the `.sidebar` has the `float` value of `left`, pushing the element to the left side of the container, rather than stacking underneath `.main`, and `.main` pursues the `float` of `right`.
+
+##### Result:
+
+![Fluid Layouts](videos/chrome_UkFKhgvqoK.gif)
