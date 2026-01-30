@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viewport Units</title>
+    <title>Media Queries Basics</title>
     <style>
-        body {
-            background-color:lightblue;
+        @media (max-width: 600px) {
+            body { background-color: lightblue; }
+            h1 { font-size: 5vw; }
         }
-        h1 {
-            font-size: 6vw;
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            body { background-color: lightgreen; }
+            h1 { font-size: 3vw; }
         }
-        p {
-            font-size: 4vmin;
-        }
-        div {
-            width: 80vw;
-            height: 50vh;
+
+        @media (min-width: 1025px) {
+            body { background-color: lightcoral; }
+            h1 { font-size: 2vw; }
         }
     </style>
 </head>
 <body>
-    <h1>Antarctica</h1>  
-    <p>The coldest continent, covered in ice and home to penguins and seals.</p>  
-    <div>It has no permanent residents, only research stations.</div>
-</body>
+    <h1>Whales: The Ocean Giants</h1>  
+    <p>Whales are magnificent giants of the sea, famous for their intelligence and powerful songs. These gentle creatures face threats like hunting and pollution, making them vital to protect.</p>  
+    <div>As ocean's true giants, whales help maintain the delicate balance of marine life.</div>  
 </body>
 </html>

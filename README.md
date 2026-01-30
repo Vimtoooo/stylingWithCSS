@@ -3077,3 +3077,79 @@ selector {
 ##### Result:
 
 ![Viewport Units in Action](videos/NVIDIA_Overlay_CNjYOCGNAm.gif)
+
+### Media Queries Basics:
+
+A **media query** in CSS allows a website to **adapt to different sizes** by applying styles based on device width, height, or other properties.
+
+#### Basic Syntax:
+
+Here is the basic syntax for Media Queries:
+
+```css
+@media (condition) {
+    selector {
+        property: value;
+    }
+}
+```
+
+#### Breakdown:
+
+* `condition`: The rule that triggers the styles (e.g. `max-width: 600px`).
+* `selector`: The HTML element(s) to style.
+* `property`: The CSS property to set (e.g. `width`, `font-size`).
+* `value`: The values assigned to the property, which changed based on the media query condition.
+
+#### How Media Queries Work:
+
+In a media query, the `condition` can be based on values factors like screen size, resolution, and more. Some common conditions include:
+
+* `max-width`: Limits styles to screens with a maximum width (e.g. `max-width: 600px).
+* `min-width`: Applies styles to screens with a minimum width (e.g. `min-width: 758px`).
+* `max-height`: Limits styles to screens with a maximum height (e.g. `max-height: 400px`).
+* `min-height`: Applies styles to screens ith a minimum height (e.g. `min-height: 500px`).
+
+These conditions help you control how your website looks on different devices and orientations.
+
+#### Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Basics</title>
+    <style>
+        @media (max-width: 600px) {
+            body { background-color: lightblue; }
+            h1 { font-size: 5vw; }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            body { background-color: lightgreen; }
+            h1 { font-size: 3vw; }
+        }
+
+        @media (min-width: 1025px) {
+            body { background-color: lightcoral; }
+            h1 { font-size: 2vw; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Whales: The Ocean Giants</h1>  
+    <p>Whales are magnificent giants of the sea, famous for their intelligence and powerful songs. These gentle creatures face threats like hunting and pollution, making them vital to protect.</p>  
+    <div>As ocean's true giants, whales help maintain the delicate balance of marine life.</div>  
+</body>
+</html>
+```
+
+> [!NOTE]
+> As we expand the width of your current window, the background color of the webpage alters and same for the header!
+
+##### Result:
+
+![Media Queries Basics](videos/chrome_30TnNPvGtp.gif)
