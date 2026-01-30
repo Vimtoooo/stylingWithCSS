@@ -2838,7 +2838,7 @@ As more people use mobile devices to browse the web, responsive design is essent
 
 #### Use of Viewport:
 
-Use **viewport** unites for responsive typography:
+Use **viewport** units for responsive typography:
 
 ```css
 h1 {
@@ -2919,3 +2919,44 @@ Make images responsive with proper scaling:
 ##### Result:
 
 ![Simple Responsive Design](videos/chrome_aDzFgCBz90.gif)
+
+### Viewport Meta Tag:
+
+The **viewport tag** controls layout and scaling on different devices, particularly mobile. It's placed in the `<head>` section for responsive eb design.
+
+#### Basic Syntax:
+
+```html
+<meta name="viewport" content="name=value, name=value">
+```
+
+#### Breakdown:
+
+These are the common viewport settings:
+
+* `width=device-width`: Sets viewport width to device screen width.
+* `initial-scale=1.0`: Sets initial zoom level (1.0 = no zoom).
+* `maximum-scale=1.0`: Sets maximum zoom level.
+* `minimum-scale=1.0`: Sets minimum zoom level.
+
+#### Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport Meta Tag</title>
+</head>
+<body>
+    <h1>Responsive Web Page</h1>
+    <p>This page uses the viewport meta tag to adapt to different screen sizes.</p>
+</body>
+</html>
+```
+
+##### Result:
+
+![Viewport Meta Tag](videos/NVIDIA_Overlay_VwvHG9PD2a.gif)
