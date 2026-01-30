@@ -3009,3 +3009,71 @@ In this example, the `.container` element has a fluid width of `80%`, which mean
 ##### Result:
 
 ![Fluid Layouts](videos/chrome_UkFKhgvqoK.gif)
+
+### Viewport Units:
+
+In CSS, viewport units are relative units of measurement that are based on the **size of the browser's viewport (the visible re of the web page)**. They provide a way to create responsive designs by <i>sizing elements and text proportionally to the width or height of the viewport</i>. Viewport units are particularly useful for creating fluid layouts, scaling text, and positioning elements in a way that adapts to different screen sizes.
+
+#### Introducing the Four Viewport Units:
+
+There are four viewport units:
+
+1. **vw (viewport width)**: Represents 1% of the viewport's width. For example, `10vw` is equal to 10% of the viewport width.
+2. **vh (viewport height)**: Represents 1% of the viewport's height. For example, `25vh` is equal to 25% of the viewport height.
+3. **vmin (viewport minimum)**: Represents 1% of the smaller dimension of the viewport (width or height). For example, if the viewport is wider that it is tall, `5vmin` is equal to 5% of the viewport height.
+4. **vmax (viewport maximum)**: Represents 1% of the larger dimension of the viewport (width or height). For example, if the viewport is wider that it is tall, `8vmax` is equal to 8% of the viewport width.
+
+#### Basic Syntax:
+
+Here's the basic syntax for using viewport units:
+
+```css
+selector {
+    property: value;
+}
+```
+
+#### Breakdown:
+
+* `selector`: The CSS select that targets the HTML element(s) you want to style.
+* `property`: The CSS property you want to set (e.g. `width`, `height`, `font-size`, `margin`, `padding`).
+* `value`: A value that includes viewport units (e.g. `50vw`, `75vh`, `10vmin`, `5vmax`).
+
+#### Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport Units</title>
+    <style>
+        body {
+            background-color:lightblue;
+        }
+        h1 {
+            font-size: 6vw;
+        }
+        p {
+            font-size: 4vmin;
+        }
+        div {
+            width: 80vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antarctica</h1>  
+    <p>The coldest continent, covered in ice and home to penguins and seals.</p>  
+    <div>It has no permanent residents, only research stations.</div>
+</body>
+</body>
+</html>
+```
+
+##### Result:
+
+![Viewport Units in Action](videos/NVIDIA_Overlay_CNjYOCGNAm.gif)
