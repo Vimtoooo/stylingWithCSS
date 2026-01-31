@@ -24,13 +24,23 @@ a {
     padding-top: 10vh;
 }
 .about {
-    padding: 3vh;
-    max-width: 80vw;
+    padding: 10px;
+    max-width: 800px; 
 }
-.about h2 { color: darkblue; }
-.about p { color: darkslategrey; }
-.about img {
+h2 {
+    color: #2980b9;
+}
+p {
+    color: #333;
+}
+img{
     width: 40vw;
     float: right;
-    margin: 10px;
+    margin: 0 10px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30vh;
 }
