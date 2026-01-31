@@ -5,25 +5,22 @@ body {
     text-align: center;
     background-color: #f4f4f4;
 }
-
 .menu {
+    background-color: #2980b9;
+    padding: 15px;
     position: fixed;
-    background-color: rgb(10, 120, 200);
-    padding: 1vw;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
     z-index: 100;
 }
-
-.menu a {
+a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    margin: 2vw;
-    color: white;
+    margin: 0 15px;
 }
 
-.welcome h1 {
-    padding: 2vh;
+.welcome {
+    padding-top: 10vh;
 }
