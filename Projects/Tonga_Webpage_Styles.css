@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.menu {
+    position: fixed;
+    background-color: rgb(10, 120, 200);
+    padding: 1vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2vw;
+    color: white;
+}
+
+.welcome h1 {
+    padding: 2vh;
+}
