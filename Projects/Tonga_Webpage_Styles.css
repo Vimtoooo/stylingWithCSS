@@ -20,7 +20,17 @@ a {
     font-weight: bold;
     margin: 0 15px;
 }
-
-.welcome {
+.welcome{
     padding-top: 10vh;
+}
+.about {
+    padding: 3vh;
+    max-width: 80vw;
+}
+.about h2 { color: darkblue; }
+.about p { color: darkslategrey; }
+.about img {
+    width: 40vw;
+    float: right;
+    margin: 10px;
 }
