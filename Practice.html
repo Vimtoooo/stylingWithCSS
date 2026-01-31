@@ -4,27 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Queries Basics</title>
+    <title>Flexible Images</title>
     <style>
-        @media (max-width: 600px) {
-            body { background-color: lightblue; }
-            h1 { font-size: 5vw; }
+        body {
+            background-color:lightblue;
         }
-
-        @media (min-width: 601px) and (max-width: 1024px) {
-            body { background-color: lightgreen; }
-            h1 { font-size: 3vw; }
+        .img-max {
+            max-width: 100%;
+            height: auto;
         }
-
-        @media (min-width: 1025px) {
-            body { background-color: lightcoral; }
-            h1 { font-size: 2vw; }
+        .img-vw {
+            width: 50vw;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Whales: The Ocean Giants</h1>  
-    <p>Whales are magnificent giants of the sea, famous for their intelligence and powerful songs. These gentle creatures face threats like hunting and pollution, making them vital to protect.</p>  
-    <div>As ocean's true giants, whales help maintain the delicate balance of marine life.</div>  
+    <div class="container">
+        <h2>Image with max-width: 100%</h2>
+        <img class="img-max" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Adelie_penguins_in_the_South_Shetland_Islands.jpg" alt="Max-Width Image">
+    </div>
+
+    <div class="container">
+        <h2>Image with width: 50vw</h2>
+        <img class="img-vw" src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adelie_Penguins_on_iceberg.jpg" alt="Viewport-Width Image">
+    </div>
 </body>
 </html>

@@ -3140,9 +3140,9 @@ These conditions help you control how your website looks on different devices an
     </style>
 </head>
 <body>
-    <h1>Whales: The Ocean Giants</h1>  
-    <p>Whales are magnificent giants of the sea, famous for their intelligence and powerful songs. These gentle creatures face threats like hunting and pollution, making them vital to protect.</p>  
-    <div>As ocean's true giants, whales help maintain the delicate balance of marine life.</div>  
+    <h1>Whales: The Ocean Giants</h1>
+    <p>Whales are magnificent giants of the sea, famous for their intelligence and powerful songs. These gentle creatures face threats like hunting and pollution, making them vital to protect.</p>
+    <div>As ocean's true giants, whales help maintain the delicate balance of marine life.</div> 
 </body>
 </html>
 ```
@@ -3153,3 +3153,70 @@ These conditions help you control how your website looks on different devices an
 ##### Result:
 
 ![Media Queries Basics](videos/chrome_30TnNPvGtp.gif)
+
+### Flexible Images:
+
+In responsive web design, **flexible images** automatically djust to fit different screen sizes, ensuring they look good on all devices. Without flexiblity, imeags may be too large on small screens or break the layout.
+
+#### Steps to making Flexible Images:
+
+1. **Use CSS `max-width`**:
+Setting `max-width: 100%` ensures that images never exceed their container width.
+
+```css
+img {
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+```
+
+2. **USe Viewport Units**:
+You can size images using **`vw` (viewport width)** to make them scale with the screen size.
+
+```css
+img {
+    width: 50vw; /* Image takes up 50% of viewport width */
+}
+```
+
+#### Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Images</title>
+    <style>
+        body {
+            background-color:lightblue;
+        }
+        .img-max {
+            max-width: 100%;
+            height: auto;
+        }
+        .img-vw {
+            width: 50vw;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Image with max-width: 100%</h2>
+        <img class="img-max" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Adelie_penguins_in_the_South_Shetland_Islands.jpg" alt="Max-Width Image">
+    </div>
+
+    <div class="container">
+        <h2>Image with width: 50vw</h2>
+        <img class="img-vw" src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adelie_Penguins_on_iceberg.jpg" alt="Viewport-Width Image">
+    </div>
+</body>
+</html>
+```
+
+##### Result:
+
+![Flexible Images](videos/hjdp4y89ES.gif)
