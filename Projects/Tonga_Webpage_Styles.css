@@ -24,8 +24,11 @@ a {
     padding-top: 10vh;
 }
 .about {
-    padding: 10px;
-    max-width: 800px; 
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 h2 {
     color: #2980b9;
@@ -34,13 +37,22 @@ p {
     color: #333;
 }
 img{
-    width: 40vw;
+    width: auto;
+    height: auto;
     float: right;
     margin: 0 10px;
+    padding: 3% 10%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.21);
 }
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 30vh;
+}
+@media (max-width: 400px) { /* Screens with a width that is smaller than 400px */
+    .menu { padding: 10px; }
+    img { float: none; }
+    .about img { width: 80vw; }
+    .contact { height: auto; }
 }
