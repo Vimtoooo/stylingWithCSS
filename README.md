@@ -3066,8 +3066,8 @@ selector {
     </style>
 </head>
 <body>
-    <h1>Antarctica</h1>  
-    <p>The coldest continent, covered in ice and home to penguins and seals.</p>  
+    <h1>Antarctica</h1>
+    <p>The coldest continent, covered in ice and home to penguins and seals.</p>
     <div>It has no permanent residents, only research stations.</div>
 </body>
 </body>
