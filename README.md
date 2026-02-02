@@ -6,7 +6,7 @@
 
 CSS is a powerful and essential language for **styling web pages**, allowing you to create visually appealing and well-designed websites with ease. It will operate with HTML to construct any content and bring it to life, transforming plain text and elements into beautiful, engaging layouts. With CSS, you have the ability to control the appearance of every aspect of your website, from colors and fonts to spacing and positioning!
 
-### CSS Syntax: 
+### CSS Syntax:
 
 Within CSS, the syntax refers to the **set of rules** that define how CSS code should be written, you can also apply the same concept in different languages like Python or Java. Understanding CSS syntax is essential for creating well-structured and functional stylesheets. A basic CSS rule consists of a **selector** and a **declarator block**.
 
@@ -3142,7 +3142,7 @@ These conditions help you control how your website looks on different devices an
 <body>
     <h1>Whales: The Ocean Giants</h1>
     <p>Whales are magnificent giants of the sea, famous for their intelligence and powerful songs. These gentle creatures face threats like hunting and pollution, making them vital to protect.</p>
-    <div>As ocean's true giants, whales help maintain the delicate balance of marine life.</div> 
+    <div>As ocean's true giants, whales help maintain the delicate balance of marine life.</div>
 </body>
 </html>
 ```
@@ -3156,7 +3156,7 @@ These conditions help you control how your website looks on different devices an
 
 ### Flexible Images:
 
-In responsive web design, **flexible images** automatically djust to fit different screen sizes, ensuring they look good on all devices. Without flexiblity, imeags may be too large on small screens or break the layout.
+In responsive web design, **flexible images** automatically adjust to fit different screen sizes, ensuring they look good on all devices. Without flexibility, images may be too large on small screens or break the layout.
 
 #### Steps to making Flexible Images:
 
